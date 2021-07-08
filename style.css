@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Otomanopee One', sans-serif;
+    background-image: url("https://img3.akspic.ru/originals/7/4/9/9/89947-vecher-priroda-more-turizm-dostoprimechatelnost-1366x768.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+.app-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3),rgba(0, 0, 0, .6));
+}
+header {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+    place-items: center;
+}
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    border-bottom: 2px dashed rgb(255, 255, 255);
+    transition: .2s all ease-in-out;
+}
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 3px solid rgb(243, 157, 44);
+}
+main {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 25px 50px;
+    color: #fff;
+}
+.location .city {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+} 
+.location .date {
+    font-size: 16px;
+}
+.main-temp .temp {
+    font-size: 100px;
+    font-weight: 900;
+    margin: 30px 0;
+    text-shadow: 2px 10px rgba(0, 0, 0, .6);
+}
+.main-temp .weather {
+    font: 32px 700 italic;
+    margin-bottom: 15px;
+    text-shadow: 0 3px rgba(0, 0, 0, .6);
+}
+@media (max-width: 768px) {
+    
+    .main-temp .temp {
+        font-size: 60px;
+        font-weight: 600;
+        margin: 20px 0;
+        text-shadow: 1px 3px rgba(0, 0, 0, .3);
+    }
+    main {
+        flex-basis: 100%;
+        padding: 10px 25px 20px;
+    }
+    header {
+        order: -1;
+        flex-basis: 100%;
+        padding: 50px 15px;
+    }
+}
